@@ -1,19 +1,19 @@
 package com.main.basic_Kt
 
 fun main() {
-    val myArr : Array<Int> = arrayOf(3, 4, 5, 6, 7)
+    val myArr: Array<Int> = arrayOf(3, 4, 5, 6, 7)
     println(myArr[2])
 
     val arr = arrayOf(4, 5, 6, 7, 8)
     println(arr[1])
 
-    val random : Array<Any> = arrayOf(1, 2, "Hello", true, 'R', 4.5)
+    val random: Array<Any> = arrayOf(1, 2, "Hello", true, 'R', 4.5)
     println(random[4])
 
-    val myIntArray : IntArray = intArrayOf(3, 2, 1)
-    val myBoolArray : BooleanArray = booleanArrayOf(true, false, true)
-    val myDoubleArray : DoubleArray = doubleArrayOf(4.452523569874155, 34.45678941645282, 45.23423333333354)
-    val myCharArray : CharArray = charArrayOf('a', 'b', 'c', 'd', 'e')
+    val myIntArray: IntArray = intArrayOf(3, 2, 1)
+    val myBoolArray: BooleanArray = booleanArrayOf(true, false, true)
+    val myDoubleArray: DoubleArray = doubleArrayOf(4.452523569874155, 34.45678941645282, 45.23423333333354)
+    val myCharArray: CharArray = charArrayOf('a', 'b', 'c', 'd', 'e')
 
 //     Primitive: byte, short, int, long, float, double, boolean, char
 //

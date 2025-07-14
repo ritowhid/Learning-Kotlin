@@ -18,7 +18,7 @@ fun main() {
         println(count)
     }
 
-    for (count in 10 downTo 0 step 2 ) { // downTo mean printing from 10 to 0
+    for (count in 10 downTo 0 step 2) { // downTo mean printing from 10 to 0
         println(count)
     }
 //
@@ -50,10 +50,8 @@ fun main() {
 //        } while (condition)
 //     */
     var i = 1
-    var d = 10
     do {
-        println(d)
-        d++
+        println("$i -> hi")
         i++
     } while (i < 5)
 
