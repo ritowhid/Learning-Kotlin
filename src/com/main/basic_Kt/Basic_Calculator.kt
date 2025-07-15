@@ -7,7 +7,7 @@ fun main() {
         print("Enter an operator (+, -, *, /, %) or 'x' to exit: ")
         val op = readLine()?.trim()?.getOrNull(0) ?: continue
 
-        if (op == 'x' || op == 'X') {
+        if (op == 'x' || op == 'X') { // or: if(op.equals('x', true)
             println("Calculator exited. Have a great day!")
             break
         }
