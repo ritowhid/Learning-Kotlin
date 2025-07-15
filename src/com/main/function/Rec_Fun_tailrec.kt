@@ -1,6 +1,6 @@
 package com.main.function
 /*
-    'tailrec' - keyword in Kotlin used to optimize recursive functions that are tail-recursive,
+    Tail Recursion: 'tailrec' - keyword in Kotlin used to optimize recursive functions that are tail-recursive,
     where recursive call is the last thing executed (no more computation after it).
 
     -> allows Kotlin to transform the recursion into a loop internally during compilation, so:

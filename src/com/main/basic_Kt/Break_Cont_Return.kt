@@ -1,11 +1,19 @@
 package com.main.basic_Kt
+/*
+    -> Unlabeled: A normal break, continue, or return that applies to the nearest loop or function.
+       It doesn't use a label name.
+       - Controls the nearest loop or lambda
+    -> Labeled: You give a name (label) to a loop or block. Then use that name with @ to control
+       exactly which loop/block you want to break, continue, or return from.
+       - Gives you manual control over which block to affect
 
+ */
 fun main() {
     // Use-case: 'continue' (skip current iteration)
     for (i in 1..10) {
         if (i == 5) {
 //            break
-            continue // will ignore 5
+            continue // will ignore 5 -> Unlabeled continue
         }
         println("value $i")
     }
@@ -38,9 +46,19 @@ fun main() {
         items.forEach {
             if (it == "Cherry") {
                 println("Found Cherry! Simulating break.")
-                return@breaking // exits the lambda scope of run{}
+                return@breaking // exits the lambda scope of run{} // Labeled break using `run` block
             }
             println("Item: $it")
         }
     }
+
+
+//Used to skip outer loop iteration from inner loop.
+    outer@ for (i in 1..3) {
+        for (j in 1..3) {
+            if (j == 2) continue@outer // This skips to next `i`
+            println("i=$i, j=$j")
+        }
+    }
+
 }

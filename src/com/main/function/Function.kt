@@ -19,8 +19,13 @@ fun main() {
         This means:
         - It accepts a Double as input.
         - And returns a Double.
-
      */
+
+    // Use rem() to find the remainder
+    val num1 = 26
+    val num2 = 3
+    val resultRem = num1.rem(num2)
+    println("The remainder when $num1 is divided by $num2 is: $resultRem")
 
     // add method
     val res = add()

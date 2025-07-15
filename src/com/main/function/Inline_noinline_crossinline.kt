@@ -40,7 +40,7 @@ fun main() {
         myOutputCi = {
             print("Crossinline: $it ")
             if (it < 10) {
-                // return ❌ Not allowed due to crossinline
+                // return is not allowed due to crossinline
             }
             print("Done & ")
         },
